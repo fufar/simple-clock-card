@@ -2,32 +2,38 @@
 A text based simple clock for people who use homeassistant on a panel
 based on https://github.com/arjhun/Homeassistant-Lovelace-Cards @arjhun
 
-A text based clock for Homeassistants' Lovelace ui
 
 ![24h clock](https://i.imgur.com/n37gyxZ.png)  
 
 ![military without seconds](https://i.imgur.com/ej4AFO3.png)
 
 ## Usage
-- Download the files in this folder to your 'www' folder in the hass config directory. The *'www'* folder can be accesed via *'/local/'* in your configuration I've put my custom elements in the sub folder *'elements'* and the js file of this card in the folder *'simple-clock-card'* as an example.
 
-- enable advanced mode and in your lovelace dashboard settings under the resources tab add the following:
+# Installation:
+Follow only one of these installation methods.
 
-![add a resource](https://i.imgur.com/pySUU4V.png)
+<details>
+  <summary><b>Installation and tracking with HACS:</b></summary>
 
-- or if you use yaml to configure lovelace:
+1. You can install this custom component by adding this repository (https://github.com/fufar/simple-clock-card) to HACS in the settings menu of HACS first. You will find the custom component in the integration menu afterwards, look for 'Simple Clock Card'.
 
-		resources:
-			- type: module
-	        	  url: /local/elements/simple-clock-card/simple-clock-card.js
+2. Set the lovelace panel
+</details>
 
-- add the following lines to a view in '*cards:*' as a *'manual card'* or use your yaml configuration and add:
+<details>
+  <summary><b>Manual installation:</b></summary>
 
-		cards:
-			- type: 'custom:simple-clock-card'
+1. Copy simple-clock-card.js into your 'www' folder in the hass config directory. The *'www'* folder can be accesed via *'/local/'* in your configuration I've put my custom elements in the sub folder *'simple-clock-card'* as an example.
+2. Enable advanced mode and in your lovelace dashboard settings
+3. Set the lovelace panel
+</details>
 
-thats it!
 
+# Set lovelace panel
+
+Add the following lines to a view in '*cards:*' as a *'manual card'* or use your yaml configuration and add:
+
+		- type: 'custom:simple-clock-card'
 
 ## Options
 |option| default|description|
