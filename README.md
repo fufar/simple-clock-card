@@ -24,14 +24,14 @@ Follow only one of these installation methods.
 
 1. Copy simple-clock-card.js into your 'www' folder in the hass config directory. The *'www'* folder can be accesed via *'/local/'* in your configuration I've put my custom elements in the sub folder *'simple-clock-card'* as an example.
 2. Enable advanced mode and in your lovelace dashboard settings
-3. ![add a resource](https://i.imgur.com/pySUU4V.png)
+3. Add a resource [add a resource](https://i.imgur.com/pySUU4V.png)
 
    or if you use yaml to configure lovelace:
 
 		resources:
 			- type: module
 	        	  url: /local/elements/simple-clock-card/simple-clock-card.js
-3. Set the lovelace panel
+4. Set the lovelace panel
 </details>
 
 
