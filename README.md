@@ -55,4 +55,4 @@ Add the following lines to a view in '*cards:*' as a *'manual card'* or use your
 		  hide_seconds: false
 
 
-Contributors: github.com/arjhun
+Author: github.com/arjhun
