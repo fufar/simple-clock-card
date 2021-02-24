@@ -1,13 +1,12 @@
 # simple-clock-card
 A text based simple clock for people who use homeassistant on a panel
-based on https://github.com/arjhun/Homeassistant-Lovelace-Cards @arjhun
+
+Based on https://github.com/arjhun/Homeassistant-Lovelace-Cards @arjhun
 
 
 ![24h clock](https://i.imgur.com/n37gyxZ.png)  
 
 ![military without seconds](https://i.imgur.com/ej4AFO3.png)
-
-## Usage
 
 # Installation:
 Follow only one of these installation methods.
@@ -25,6 +24,13 @@ Follow only one of these installation methods.
 
 1. Copy simple-clock-card.js into your 'www' folder in the hass config directory. The *'www'* folder can be accesed via *'/local/'* in your configuration I've put my custom elements in the sub folder *'simple-clock-card'* as an example.
 2. Enable advanced mode and in your lovelace dashboard settings
+3. ![add a resource](https://i.imgur.com/pySUU4V.png)
+
+   or if you use yaml to configure lovelace:
+
+		resources:
+			- type: module
+	        	  url: /local/elements/simple-clock-card/simple-clock-card.js
 3. Set the lovelace panel
 </details>
 
