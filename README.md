@@ -22,7 +22,7 @@ Follow only one of these installation methods.
 <details>
   <summary><b>Manual installation:</b></summary>
 
-1. Copy simple-clock-card.js into your 'www' folder in the hass config directory. The *'www'* folder can be accesed via *'/local/'* in your configuration I've put my custom elements in the sub folder *'simple-clock-card'* as an example.
+1. Copy simple-clock-card.js into your 'www' folder in the hass config directory. The *'www'* folder can be accesed via *'/local/'* in your configuration I've put my custom elements in the sub folder *'elements'* and the js file of this card in the folder *'simple-clock-card'* as an example.
 2. Enable advanced mode and in your lovelace dashboard settings
 3. Add a resource ![add a resource](https://i.imgur.com/pySUU4V.png)
 
@@ -30,7 +30,7 @@ Follow only one of these installation methods.
 
 		resources:
 			- type: module
-	        	  url: /local/elements/simple-clock-card/simple-clock-card.js
+	        	  url: /hacsfiles/elements/simple-clock-card/simple-clock-card.js
 4. Set the lovelace panel
 </details>
 
