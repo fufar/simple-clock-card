@@ -47,3 +47,6 @@ Add the following lines to a view in '*cards:*' as a *'manual card'* or use your
 		- type: 'custom:simple-clock-card'
 		  use_military: false
 		  hide_seconds: false
+
+
+Contributors: github.com/arjhun
