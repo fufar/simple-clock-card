@@ -1,3 +1,6 @@
+[![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/custom-components/hacs)
+
+
 # simple-clock-card
 A text based simple clock for people who use homeassistant on a panel
 
