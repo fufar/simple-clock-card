@@ -27,11 +27,11 @@ class SimpleClockCard extends HTMLElement {
     m = this.addZero(m);
     s = this.addZero(s);
 
-    let time_str =  (this.config.use_military ? h % 12 : h ) +
+    let time_str =  (this.config.use_military ? h : h % 12 ) +
                     ":" +
                     m +
                     (this.config.hide_seconds ? "" : ":" + s ) +
-                    (this.config.use_military ? " " + p : " ");
+                    (this.config.use_military ? " " : " " + p );
 
     this.content.innerHTML = time_str;
 
@@ -50,7 +50,7 @@ class SimpleClockCard extends HTMLElement {
       this.appendChild(card);
     }
     this.startTime();
-    setInterval(this.startTime.bind(this), 250);
+    setInterval(this.startTime.bind(this), 1000);
   }
 
 }
