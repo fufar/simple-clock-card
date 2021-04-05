@@ -50,7 +50,7 @@ class SimpleClockCard extends HTMLElement {
       this.appendChild(card);
     }
     this.startTime();
-    setInterval(this.startTime.bind(this), 250);
+    setInterval(this.startTime.bind(this), 1000);
   }
 
 }
