@@ -2,9 +2,7 @@ class SimpleClockCard extends HTMLElement {
 
   setConfig(config) {
     this.config = config;
-    if (this.config.use_military == null) this.config.use_military = true;
-    if (this.config.hide_seconds == null) this.config.hide_seconds = false;
-  }
+}
 
   getCardSize() {
     return 1;
@@ -27,11 +25,14 @@ class SimpleClockCard extends HTMLElement {
     m = this.addZero(m);
     s = this.addZero(s);
 
-    let time_str =  (this.config.use_military ? h : h % 12 ) +
+    let  use_military = this.config.use_military !== undefined ? this.config.use_military : true;
+    let  hide_seconds = this.config.hide_seconds !== undefined ? this.config.hide_seconds : false;
+
+    let time_str =  (use_military ? h : h % 12 ) +
                     ":" +
                     m +
-                    (this.config.hide_seconds ? "" : ":" + s ) +
-                    (this.config.use_military ? " " : " " + p );
+                    (hide_seconds ? "" : ":" + s ) +
+                    (use_military ? " " : " " + p );
 
     this.content.innerHTML = time_str;
 
@@ -42,8 +43,8 @@ class SimpleClockCard extends HTMLElement {
     if (!this.content) {
       const card = document.createElement('HA-card');
       this.content = document.createElement('div');
-      this.content.style.padding = '16px';
-      this.content.style.fontSize = '4rem';
+      this.content.style.padding = this.config.padding_size ? this.config.padding_size : '16px';
+      this.content.style.fontSize = this.config.font_size ? this.config.font_size : '4rem' ;
       this.style.textAlign = 'center';
       this.content.style.display = 'inline-block';
       card.appendChild(this.content);
