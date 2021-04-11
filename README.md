@@ -58,7 +58,7 @@ Add the following lines to a view in '*cards:*' as a *'manual card'* or use your
 		- type: 'custom:simple-clock-card'
 		  use_military: true
 		  hide_seconds: false
-      font_size: 6rem
-      padding_size: 32px
+		  font_size: 6rem
+		  padding_size: 32px
 
 Author: github.com/arjhun
