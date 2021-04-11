@@ -61,4 +61,4 @@ Add the following lines to a view in '*cards:*' as a *'manual card'* or use your
 		  font_size: 6rem
 		  padding_size: 32px
 
-Author: github.com/arjhun
+Original author: github.com/arjhun
