@@ -53,7 +53,7 @@ Add the following lines to a view in '*cards:*' as a *'manual card'* or use your
 |  padding_size| 32px| Size of the lovelace field in px. Units of measurement is required|
 
 ## Example
-- show a 24h clock without seconds:
+- show a 24h clock with seconds:
 
 		- type: 'custom:simple-clock-card'
 		  use_military: true
