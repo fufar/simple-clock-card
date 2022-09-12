@@ -1,8 +1,8 @@
-[![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg)](https://github.com/custom-components/hacs)
+[![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg)](https://github.com/hacs/integration)
 
 
 # simple-clock-card
-A text based simple clock for people who use homeassistant on a panel
+A text based simple clock for people who use Home Assistant on a panel
 
 Based on https://github.com/arjhun/Homeassistant-Lovelace-Cards @arjhun
 
