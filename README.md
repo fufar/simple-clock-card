@@ -47,7 +47,7 @@ Add the following lines to a view in '*cards:*' as a *'manual card'* or use your
 ## Options
 |option| default|description|
 |--|--|--|
-|  use_millitary| true| When true shows a 24h format clock instead of a 12h format clock with AM/ PM|
+|  use_military| true| When true shows a 24h format clock instead of a 12h format clock with AM/ PM|
 |  hide_seconds| false| When true hides the seconds
 |  font_size| 4rem| Size of the font in rem. Units of measurement is required|
 |  padding_size| 32px| Size of the lovelace field in px. Units of measurement is required|
