@@ -59,6 +59,9 @@ Add the following lines to a view in '*cards:*' as a *'manual card'* or use your
 		  use_military: true
 		  hide_seconds: false
 		  font_size: 6rem
-		  padding_size: 32px
+		  paddingLeft_size: 32px
+		  paddingRight_size: 32px
+		  paddingTop_size: 32px
+		  paddingBottom_size: 32px
 
 Original author: github.com/arjhun
