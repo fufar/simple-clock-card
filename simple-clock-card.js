@@ -37,8 +37,9 @@ class SimpleClockCard extends HTMLElement {
 
 				let  use_military = config.use_military !== undefined ? config.use_military : true;
 				let  hide_seconds = config.hide_seconds !== undefined ? config.hide_seconds : false;
+				let  lead_zero = config.lead_zero !== undefined ? config.lead_zero : false;
 
-				let time_str =  (use_military ? h : ((h + 11) % 12) + 1 ) +
+				let time_str =  (use_military ? (lead_zero ? addZero(h) : h) : ((h + 11) % 12) + 1 ) +
                    ":" +
                    m +
                    (hide_seconds ? "" : ":" + s ) +
