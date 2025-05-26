@@ -1,5 +1,16 @@
 [![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg)](https://github.com/hacs/integration)
 
+# Warning
+Now HA has own lovelace card i suggest to switch to it and dont use this anymore https://www.home-assistant.io/dashboards/clock/
+I think i will archive this repo later this year(2025)
+
+...
+
+...
+
+...
+
+...
 
 # simple-clock-card
 A text based simple clock for people who use Home Assistant on a panel
